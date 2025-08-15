@@ -1,0 +1,20 @@
+Logo Placeholder
+
+This folder should contain:
+- logo.png: Company logo image (recommended size: 80x80px or larger, PNG format with transparent background)
+
+The JavaScript application will automatically:
+- Load logo.png if it exists
+- Show a placeholder "LOGO" box if the file is not found
+- Scale the logo to 80x80px in the top-left corner when enabled
+
+To add your logo:
+1. Save your logo as "logo.png" in this assets folder
+2. Refresh the web application
+3. The logo will automatically appear when the "Show Logo" option is enabled
+
+Recommended logo specifications:
+- Format: PNG with transparent background
+- Minimum size: 80x80px (will be scaled down if larger)
+- File size: Under 1MB for optimal loading
+- Square aspect ratio works best

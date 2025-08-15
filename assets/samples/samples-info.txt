@@ -1,0 +1,18 @@
+Sample Assets Folder
+
+This folder is optional and can contain sample images for users to test the banner generator:
+
+Recommended sample assets:
+- sample-photo.jpg (450x300px or similar aspect ratio)
+- sample-3d-asset.png (PNG with transparent background)
+- Various background-compatible images
+
+Users can use these samples to:
+- Test different asset types
+- See how different image formats work
+- Learn the optimal dimensions and formats
+
+To add samples:
+1. Add sample images to this folder
+2. Update the README.md to mention available samples
+3. Consider adding a "Load Sample" feature in future versions

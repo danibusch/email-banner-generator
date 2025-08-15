@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Banner Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Banner Generator</h1>
+            <p>Create professional 900x300px email banners instantly</p>
+        </header>
+
+        <div class="generator-container">
+            <div class="controls-panel">
+                <div class="control-group">
+                    <label>Background Color</label>
+                    <div class="color-selector">
+                        <input type="radio" id="white" name="bgColor" value="#FFFFFF" checked>
+                        <label for="white" class="color-option white-bg">White</label>
+                        
+                        <input type="radio" id="black" name="bgColor" value="#000000">
+                        <label for="black" class="color-option black-bg">Black</label>
+                        
+                        <input type="radio" id="green" name="bgColor" value="#EAFFBB">
+                        <label for="green" class="color-option green-bg">Light Green</label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="titleInput">Banner Title</label>
+                    <input type="text" id="titleInput" placeholder="Enter your banner title" maxlength="50">
+                </div>
+
+                <div class="control-group">
+                    <label for="fontSizeSlider">Font Size: <span id="fontSizeValue">32px</span></label>
+                    <input type="range" id="fontSizeSlider" min="16" max="48" value="32">
+                </div>
+
+                <div class="control-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="logoToggle" checked>
+                        <span class="checkmark"></span>
+                        Show Logo
+                    </label>
+                </div>
+
+                <div class="control-group">
+                    <label>Asset Type</label>
+                    <div class="asset-type-selector">
+                        <input type="radio" id="photo" name="assetType" value="photo" checked>
+                        <label for="photo">Photo (450x300px)</label>
+                        
+                        <input type="radio" id="asset3d" name="assetType" value="3d">
+                        <label for="asset3d">3D Asset (PNG)</label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="assetUpload">Upload Asset (Optional)</label>
+                    <input type="file" id="assetUpload" accept="image/*">
+                    <div class="file-info">
+                        <small>Recommended: PNG or JPG, max 5MB</small>
+                    </div>
+                </div>
+
+                <div class="control-group preview-info">
+                    <p><strong>Preview:</strong> Real-time banner preview</p>
+                    <p><small>Final size: 900x300 pixels</small></p>
+                </div>
+            </div>
+
+            <div class="preview-panel">
+                <canvas id="bannerCanvas" width="900" height="300"></canvas>
+                <div class="canvas-overlay" id="canvasOverlay">
+                    <p>Your banner will appear here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="generateBtn" class="btn btn-primary">Generate Banner</button>
+            <button id="downloadBtn" class="btn btn-secondary" disabled>Download PNG</button>
+            <button id="clearBtn" class="btn btn-tertiary">Clear All</button>
+        </div>
+
+        <div class="info-section">
+            <h3>How to Use</h3>
+            <ol>
+                <li>Choose your background color</li>
+                <li>Enter your banner title</li>
+                <li>Adjust font size as needed</li>
+                <li>Toggle logo display on/off</li>
+                <li>Select asset type and upload an image (optional)</li>
+                <li>Click "Generate Banner" to create your design</li>
+                <li>Download your banner as PNG</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>Built for creating professional email banners • GitHub Pages Ready</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
